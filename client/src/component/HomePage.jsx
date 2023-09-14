@@ -53,7 +53,7 @@ function HomePage() {
                   <button onClick={() => handleComplete(e.task_id)}>
                     hoàn thành
                   </button>
-                  <button>xóa</button>
+                  <button onClick={() => handleDelete(e.task_id)}>xóa</button>
                 </span>
               </li>
             </ul>
@@ -66,7 +66,6 @@ function HomePage() {
               <li key={i}>
                 <span>{e.task_name}</span>
                 <span>
-                  <button>hoàn thành</button>
                   <button onClick={() => handleDelete(e.task_id)}>xóa</button>
                 </span>
               </li>
